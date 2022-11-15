@@ -6,5 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habit Tracker</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Track Your Habits</h1>
+    </header>
+    <section class="newHabitSection">
+      <h3>Add a new habit:</h3>
+      <form>
+        <div>
+          <label for="newHabit">New habit title: </label>
+          <input id="newHabit" type="text" required minlength="1" />
+        </div>
+        <div><button class="submit-Habit">Submit</button></div>
+      </form>
+    </section>
+    <main class="habitOverview"></main>
+  </body>
 </html>
