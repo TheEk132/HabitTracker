@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habit Tracker</title>
+    <script src="app.js" async></script>
   </head>
   <body>
     <header>
@@ -17,9 +18,13 @@
           <label for="newHabit">New habit title: </label>
           <input id="newHabit" type="text" required minlength="1" />
         </div>
-        <div><button class="submit-Habit">Submit</button></div>
+        <!-- Use type="button" to change type from submit (default) to button
+        THis prevents page refresh upon clicking -->
+        <div><button class="submitBtn" type="button">Submit</button></div>
       </form>
     </section>
-    <main class="habitOverview"></main>
+    <main class="habitOverview">
+      <h3>Current habits:</h3>
+    </main>
   </body>
 </html>
